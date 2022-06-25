@@ -73,3 +73,35 @@ header img{
   position: relative;
   padding: 2rem;
   }
+
+  footer{
+    margin-top: 28%;
+    background-image:linear-gradient(to left,#B2EBF2, #E1BEE7);
+    padding-top: 20px;
+}
+
+
+.footer__redes{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    padding-top: 2rem;
+}
+
+
+
+.footer__redes__sociales{
+    display: inline;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+
+.footer__copyright{
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+}

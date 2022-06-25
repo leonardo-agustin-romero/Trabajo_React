@@ -5,11 +5,15 @@ import './App.css';
 import React from 'react';
 import { isDOMComponent } from 'react-dom/test-utils';
 import NarBar from './components/NavBar';
+import NuevoFooter from './components/footer';
+import titulos from './containers/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
       <NarBar />
+      <titulos />
+      <NuevoFooter />
     </div>
   );
 }

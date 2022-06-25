@@ -4,7 +4,6 @@ const NarBar = ()=>{
     return(
     <div>
         <header>
-            <img src="../fotos/logo.ico" alt="logo" className="header__logo"/>
         <h1 className="header__h1"><b>Che Que Rico</b></h1>
         <nav className="header__nav">
             <ul className="header__nav__ul">
