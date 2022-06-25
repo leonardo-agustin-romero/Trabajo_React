@@ -1,10 +1,9 @@
+import React from 'react';
 
-
-const titulosPrincipal = ()=>{
-let titulo = "bienvenido"
+const titulosPrincipal = () =>{
     return(
         <div>
-            <h1>${titulo}</h1>
+            <h1>hola</h1>
             <h2>como estan?</h2>
         </div>
     )
