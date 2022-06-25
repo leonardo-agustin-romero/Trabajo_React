@@ -6,13 +6,15 @@ import React from 'react';
 import { isDOMComponent } from 'react-dom/test-utils';
 import NarBar from './components/NavBar';
 import NuevoFooter from './components/footer';
-import titulos from './containers/ItemListContainer';
+import titulosPrincipal from './components/containers/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
       <NarBar />
-      <titulos />
+      <div>
+        <titulosPrincipal />
+      </div>
       <NuevoFooter />
     </div>
   );

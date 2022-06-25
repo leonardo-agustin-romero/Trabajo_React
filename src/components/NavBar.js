@@ -4,7 +4,7 @@ const NarBar = ()=>{
     return(
     <div>
         <header>
-        <h1 className="header__h1"><b>Che Que Rico</b></h1>
+        <h1 className="header__h1"><b>APRENDIENDO REACT</b></h1>
         <nav className="header__nav">
             <ul className="header__nav__ul">
                 <li className="header__nav__ul--li">
