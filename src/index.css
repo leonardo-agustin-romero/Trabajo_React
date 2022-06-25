@@ -5,9 +5,71 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: antiquewhite;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 6rem;
+  background-image:linear-gradient(to left,#B2EBF2, #E1BEE7);
+  padding: 15px;
+}
+header img{
+  margin-left: 10px;
+}
+
+
+.header__h1{
+  font-family: 'Titillium Web', sans-serif;
+  font-style: oblique;
+  color: #244b4b;
+  text-shadow: 3px 4px 8px #244b4b;
+  display: inline;
+  padding: 1rem;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+
+.header__logo{
+  display: inline;
+  box-sizing: border-box;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  transition: all 1.5s;
+  margin: 0.5rem;
+}
+
+
+
+
+.header__nav{
+  box-sizing: border-box;
+  display: inline;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav__ul{
+  list-style: none;
+  box-sizing: border-box;
+  display: inline;
+  }
+
+.header__nav__ul--li{
+  display: inline;
+  box-sizing: border-box;
+  text-decoration: none;
+  position: relative;
+  padding: 2rem;
+  }
