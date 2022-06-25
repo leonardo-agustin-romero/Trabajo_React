@@ -1,5 +1,10 @@
+
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import { isDOMComponent } from 'react-dom/test-utils';
+import NarBar from './components/NavBar';
 
 function App() {
   return (
@@ -9,9 +14,12 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <NarBar />
         <a
           className="App-link"
           href="https://reactjs.org"
+
+
           target="_blank"
           rel="noopener noreferrer"
         >
