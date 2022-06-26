@@ -1,9 +1,9 @@
 import React from 'react';
 
-function saludo() {
+const saludo =() => {
 
     return (
-        <h1>hola</h1>
+        <h1>biemvenido a react</h1>
     );
 }
 

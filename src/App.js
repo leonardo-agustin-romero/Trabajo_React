@@ -6,7 +6,6 @@ import NuevoFooter from './components/footer';
 import titulosPrincipal from './components/containers/ItemListContainer';
 import saludo from './components/saludo';
 
-
 function App() {
   
   return (
