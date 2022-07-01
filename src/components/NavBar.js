@@ -1,9 +1,13 @@
 
+
+
+
 const NarBar = ()=>{
 
     return(
     <div>
         <header>
+        imagen  
         <h1 className="header__h1"><b>APRENDIENDO REACT</b></h1>
         <nav className="header__nav">
             <ul className="header__nav__ul">
