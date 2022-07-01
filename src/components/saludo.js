@@ -3,7 +3,9 @@ import React from 'react';
 const saludo =() => {
 
     return (
-        <h1>biemvenido a react</h1>
+        <div>
+            <h1>bienvenidos a react</h1>
+        </div>
     );
 }
 

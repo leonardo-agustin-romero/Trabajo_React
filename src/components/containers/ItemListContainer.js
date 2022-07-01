@@ -1,6 +1,7 @@
 import React from 'react';
 
 const titulosPrincipal = () =>{
+    
     return(
         <div>
             <h1>hola</h1>
