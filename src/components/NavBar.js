@@ -1,4 +1,5 @@
-
+import React from 'react';
+import Image from './CartWidget';
 
 
 
@@ -7,7 +8,7 @@ const NarBar = ()=>{
     return(
     <div>
         <header>
-        imagen  
+        <Image  />
         <h1 className="header__h1"><b>APRENDIENDO REACT</b></h1>
         <nav className="header__nav">
             <ul className="header__nav__ul">

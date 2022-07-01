@@ -1,11 +1,14 @@
-import logo1 from './'
+import React from 'react';
 
-const imagen = () =>{
+
+
+const Image = (props)=>{
+
     return(
-        <div>
-            <imagen/>
-        </div>
+            <img src={props.src} alt={props.alt} style={{display: 
+            props.src.length > 0 ? 'block' : 'none'}}/>
     )
 }
 
-export default imagen;
+export default Image;
+
