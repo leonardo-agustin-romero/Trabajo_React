@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import logo from '../fotos/logo.ico';
 
 const Image = (props)=>{
 
