@@ -5,7 +5,7 @@ import NarBar from './components/NavBar';
 import NuevoFooter from './components/footer';
 import Saludo from './components/saludo';
 import ItemListContainer from './components/containers/ItemListContainer';
-
+import Item from './components/containers/item';
 function App() {
   
   return (
@@ -14,6 +14,7 @@ function App() {
       <Saludo />
       <ItemListContainer prop='PRACTICANDO PROP'/>
       <NuevoFooter />
+      <Item />
     </div>
   );
 }
