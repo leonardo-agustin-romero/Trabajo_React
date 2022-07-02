@@ -4,7 +4,7 @@ import React from 'react';
 import NarBar from './components/NavBar';
 import NuevoFooter from './components/footer';
 import Saludo from './components/saludo';
-import titulosPrincipal from './components/containers/ItemListContainer.js';
+import ItemListContainer from './components/containers/ItemListContainer';
 
 function App() {
   
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <NarBar />
       <Saludo />
-      <titulosPrincipal />
+      <ItemListContainer prop='PRACTICANDO PROP'/>
       <NuevoFooter />
     </div>
   );

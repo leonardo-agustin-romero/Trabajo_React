@@ -1,11 +1,10 @@
 import React from 'react';
 import logo from '../fotos/logo.ico';
 
-const Image = (props)=>{
+const Image = ()=>{
 
     return(
-            <img src={props.src} alt={props.alt} style={{display: 
-            props.src.length > 0 ? 'block' : 'none'}}/>
+            <img src={logo} alt={'logo'} className='logo' />
     )
 }
 

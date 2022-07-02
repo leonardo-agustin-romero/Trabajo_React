@@ -40,7 +40,7 @@ header img{
 }
 
 
-.header__logo{
+.logo{
   display: inline;
   box-sizing: border-box;
   height: 3rem;
@@ -73,6 +73,16 @@ header img{
   position: relative;
   padding: 2rem;
   }
+
+.logo:hover{
+  transform: scale(1.1);
+  box-shadow: 12px 20px 20px 0px #484949;
+}
+
+.header__nav__ul--li--a{
+  text-decoration: none;
+}
+
 
   footer{
     margin-top: 35%;

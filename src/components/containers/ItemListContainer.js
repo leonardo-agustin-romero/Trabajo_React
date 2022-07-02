@@ -1,14 +1,13 @@
 import React from 'react';
 
-const titulosPrincipal = () =>{
+const ItemListContainer = ({prop}) =>{
     
     return(
         <div>
-            <h1>hola</h1>
-            <h2>como estan?</h2>
+            <h2>{prop}</h2>
         </div>
     )
 }
 
-export default titulosPrincipal;
+export default ItemListContainer;
 
