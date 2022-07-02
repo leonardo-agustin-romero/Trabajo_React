@@ -6,16 +6,23 @@ import NuevoFooter from './components/footer';
 import Saludo from './components/saludo';
 import ItemListContainer from './components/containers/ItemListContainer';
 import Item from './components/containers/item';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import saludo from './components/saludo';
 function App() {
   
   return (
-    <div className="App">
+    <BrowserRouter>
+      <div className="App">
       <NarBar />
-      <Saludo />
-      <ItemListContainer prop='PRACTICANDO PROP'/>
-      <NuevoFooter />
-      <Item />
-    </div>
+          <Routes>
+            <Route path='/' element={<saludo />} />
+            <Route path='/REMERAS.HTML' element={<ItemListContainer prop='PRACTICANDO PROP'/>} />
+            <Route path='/BUZOS.HTML' element={<ItemListContainer prop='PRACTICANDO PROP'/>} />
+          </Routes>
+        <NuevoFooter />
+        <Item />
+      </div>
+    </BrowserRouter>
   );
 }
 
