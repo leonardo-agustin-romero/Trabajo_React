@@ -7,7 +7,6 @@ import Saludo from './components/saludo';
 import ItemListContainer from './components/containers/ItemListContainer';
 import Item from './components/containers/item';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import saludo from './components/saludo';
 function App() {
   
   return (
@@ -15,7 +14,7 @@ function App() {
       <div className="App">
       <NarBar />
           <Routes>
-            <Route path='/' element={<saludo />} />
+            <Route index path='/' element={<saludo />} />
             <Route path='/REMERAS.HTML' element={<ItemListContainer prop='PRACTICANDO PROP'/>} />
             <Route path='/BUZOS.HTML' element={<ItemListContainer prop='PRACTICANDO PROP'/>} />
           </Routes>
