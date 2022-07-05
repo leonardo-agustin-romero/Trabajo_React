@@ -1,5 +1,17 @@
 
 
+export const categorias = [
+
+    {id:1,nombre:"bazar"},
+    {id:2,nombre:"bijuteri"},
+    {id:3,nombre:"Tecnología"},
+    {id:4,nombre:"Juguetes"},
+    {id:5,nombre:"belleza"},
+
+]
+
+
+
 export const productos = [
 
     {id:1,nombre:"bandeja rectangular", precio:305, categoria:1, stock:100},
@@ -66,6 +78,4 @@ export const productos = [
     {id:58,nombre:"brillo labial", precio:122, categoria:5, stock: 30},
     {id:59,nombre:"sombra x 9", precio:439, categoria:5, stock: 17},
     {id:60,nombre:"labial ", precio:122, categoria:5,  stock: 10}  
-    
-
 ]
