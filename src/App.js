@@ -19,9 +19,9 @@ function App() {
             <Route path='/REMERAS.HTML' element={<ItemListContainer prop='PRACTICANDO PROP'/>} />
             <Route path='/BUZOS.HTML' element={<ItemListContainer prop='PRACTICANDO PROP'/>} />
           </Routes>
-        <NuevoFooter />
         <Item />
         <Promesa />
+        <NuevoFooter />
       </div>
     </BrowserRouter>
   );

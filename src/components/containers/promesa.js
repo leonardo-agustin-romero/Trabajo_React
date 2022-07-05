@@ -12,12 +12,26 @@ const Task = new Promise( (resolve, reject) => {
 
 });
 
+setTimeout(() => {
+    
+}, 3000);
+
 const Promesa = () => {
     Task
-    .then((results) => console.log (results));
+    .then((results) => {
+        //throw new Error('se rompio todo') // error se rompio todo
+        //console.log (results)
+        return results;
+    })
+    .catch((err) => console.log (err))
+    .then((res) => {
+        console.log (res)
+    })
+    .finally(() => console.log('finalizado'))
+
     return (
         <> 
-        
+        'hola'
         </>)
 }
 
