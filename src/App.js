@@ -7,6 +7,7 @@ import Saludo from './components/Saludo';
 import ItemListContainer from './components/containers/ItemListContainer';
 import Item from './components/containers/item';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Promesa from './components/containers/promesa';
 function App() {
   
   return (
@@ -20,6 +21,7 @@ function App() {
           </Routes>
         <NuevoFooter />
         <Item />
+        <Promesa />
       </div>
     </BrowserRouter>
   );

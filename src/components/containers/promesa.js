@@ -1,7 +1,24 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
 
-const task = new Promise((resuelto, rechazado) => {});
+const Task = new Promise( (resolve, reject) => {
+    let condicion = true
+    if(condicion) {
+        resolve ('200 promesa ok')
+    }else{
+        reject ('404 promesa error')
+    }
+    
 
-console.log(task);
-export default task;
+
+});
+
+const Promesa = () => {
+    Task
+    .then((results) => console.log (results));
+    return (
+        <> 
+        
+        </>)
+}
+
+export default Promesa;
