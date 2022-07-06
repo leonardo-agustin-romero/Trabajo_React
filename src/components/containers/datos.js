@@ -79,3 +79,4 @@ export const productos = [
     {id:59,nombre:"sombra x 9", precio:439, categoria:5, stock: 17},
     {id:60,nombre:"labial ", precio:122, categoria:5,  stock: 10}  
 ]
+

@@ -1,15 +1,19 @@
 import React from 'react'
 import { productos } from './datos';
+import { Cards } from './card';
 
 
 const Task = new Promise( (resolve, reject) => {
     let condicion = true
     if(condicion) {
-        resolve (productos)
+        resolve (productos);
     }else{
         reject ('404 promesa error')
     }
 });
+
+
+
 
 
 const Promesa = () => {
@@ -35,16 +39,17 @@ const Promesa = () => {
         })
         .catch((err) => console.log (err))
         .then((res) => {
-            console.log (res)
+            console.log (res);
         })
         .finally(() => console.log('finalizado'))
-
+        
+        .catch((error) => console.log(error));
         console.log("producto simulacion 6 segundos")
     }, 6000);
-
+    
     return (
         <> 
-        'hola'
+            {Cards()}
         </>)
 }
 

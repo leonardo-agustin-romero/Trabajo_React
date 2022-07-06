@@ -1,37 +1,39 @@
 import React from 'react';
 import { productos } from './datos';
 import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-
+import { useState } from 'react';
 
 
 
 
 
 export const Cards = () => {
+    const [loading, setLoading] = useState(false);
 
     return (
     <div className="card">
-        {productos.map(cardProductos =>
-        <div  className='col-md-4 p-1' key={cardProductos.id}>
-            <Card>
+        {loading ? <h2>cargando . . .</h2>
+        :  
+        productos.map(cardProductos =>
+        <div  className='col-md-4 p-4' key={cardProductos.id}>
+            <div>
                 <div className='card w-100 mt-5'>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body className='w-50'>
-                    <Card.Title>{cardProductos.nombre}</Card.Title>
-                    <Card.Text>
-                        ${cardProductos.precio}
-                    </Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                    <small className="text-muted">{cardProductos.categoria}</small>
-                </Card.Footer>
+                    <div className='card-header'>
+                        <Card.Title>{cardProductos.nombre}</Card.Title>
+                        <Card.Img variant="top" src={cardProductos.image} className='w-50'/>
+                        <div className='card-body'>
+                            
+                    <b className="card-footer">${cardProductos.precio}   stock {cardProductos.stock} unidad</b>
+                        <button className="btn btn-primary">COMPRAR</button>
+                        </div>
+                    </div>
+                <div>
                 </div>
-            </Card>
+                </div>
+            </div>
         </div>
         )}
-
+        
     </div>
     );
 }

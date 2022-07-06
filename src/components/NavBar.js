@@ -12,19 +12,19 @@ const NarBar = ()=>{
         <nav className="header__nav">
             <ul className="header__nav__ul">
                 <li className="header__nav__ul--li">
-                    <a className="header__nav__ul--li--a" href="zapatilla.html">ZAPATILLA</a>
+                    <a className="header__nav__ul--li--a" href="zapatilla.html">BAZAR</a>
                 </li>
                 <li className="header__nav__ul--li">
-                    <a className="header__nav__ul--li--a" href="buzos.html">BUZOS</a>
+                    <a className="header__nav__ul--li--a" href="buzos.html">BIJUTERI</a>
                 </li>
                 <li className="header__nav__ul--li">
-                    <a className="header__nav__ul--li--a" href="remeras.html">REMERAS</a>
+                    <a className="header__nav__ul--li--a" href="remeras.html">TECNOLOGIA</a>
                 </li>
                 <li className="header__nav__ul--li">
-                    <a className="header__nav__ul--li--a" href="camperas.html">CAMPERAS</a>
+                    <a className="header__nav__ul--li--a" href="camperas.html">JUGUETES</a>
                 </li>
                 <li className="header__nav__ul--li">
-                    <a className="header__nav__ul--li--a" href="pantalones.html">PANTALONES</a>
+                    <a className="header__nav__ul--li--a" href="pantalones.html">BELLEZA</a>
                 </li>
             </ul>
         </nav>

@@ -9,6 +9,7 @@ import Item from './components/containers/item';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Promesa from './components/containers/promesa';
 import { Cards } from './components/containers/card';
+import { Promesa2 } from './components/containers/promesa2';
 function App() {
   
   return (
@@ -21,8 +22,9 @@ function App() {
             <Route path='/BUZOS.HTML' element={<ItemListContainer prop='PRACTICANDO PROP'/>} />
           </Routes>
         <Item />
-        <Cards />
+        {/* <Cards /> */}
         <Promesa />
+        <Promesa2 />
         <NuevoFooter />
       </div>
     </BrowserRouter>
