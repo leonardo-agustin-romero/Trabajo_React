@@ -1,20 +1,25 @@
-import React from 'react';
-import { productos, getDateTime } from './datos';
-import Card from 'react-bootstrap/Card';
-import { useState } from 'react';
+import React  from 'react';
+import { productos } from "./datos";
+import { Card } from "react-bootstrap";
+import { useState } from "react";
 
 
 
 
 
-export const Cards = () => {
-    const [loading, setLoading] = useState(false);
+export const categoriaBazar = () => {
+    const categoria = {}
 
-    return (
-    <div className="card">
-        {loading ? <h2>cargando . . .</h2>
-        :  
-        productos.map(cardProductos =>
+    productos.forEach(element => {
+        if(element.categoria === 1){
+            element = categoria
+        }
+    });
+        return(
+            <>
+                    <div className="card">
+        {
+        categoria.map(cardProductos  =>
         <div  className='col-md-4 p-4' key={cardProductos.id}>
             <div>
                 <div className='card w-100 mt-5'>
@@ -28,7 +33,6 @@ export const Cards = () => {
                         </div>
                     </div>
                 <div>
-                    <getDateTime />
                 </div>
                 </div>
             </div>
@@ -36,7 +40,6 @@ export const Cards = () => {
         )}
         
     </div>
-    );
-}
-
-
+            </>
+        )
+    }

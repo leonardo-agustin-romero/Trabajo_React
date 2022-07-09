@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Promesa from './components/containers/promesa';
 import { Cards } from './components/containers/card';
 import { Promesa2 } from './components/containers/promesa2';
+import { categoriaBazar } from './components/containers/categorias';
 function App() {
   
   return (
@@ -18,8 +19,8 @@ function App() {
       <NarBar />
           <Routes>
             <Route index path='/' element={<Saludo />} />
-            <Route path='/REMERAS.HTML' element={<ItemListContainer prop='PRACTICANDO PROP'/>} />
-            <Route path='/BUZOS.HTML' element={<ItemListContainer prop='PRACTICANDO PROP'/>} />
+            <Route path='/bazar.HTML' element={<categoriaBazar /> }/>
+            <Route path='/billuteri.HTML' element={<ItemListContainer prop='PRACTICANDO PROP'/>} />
           </Routes>
         <Item />
         {/* <Cards /> */}
