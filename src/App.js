@@ -17,14 +17,14 @@ function App() {
     <BrowserRouter>
       <div className="App">
       <NarBar />
-          <Routes>
+          {/* <Routes>
             <Route index path='/' element={<Saludo />} />
             <Route path='/bazar.HTML' element={<categoriaBazar /> }/>
             <Route path='/billuteri.HTML' element={<ItemListContainer prop='PRACTICANDO PROP'/>} />
           </Routes>
-        <Item />
+        <Item /> */}
         {/* <Cards /> */}
-        <Promesa />
+        {/* <Promesa /> */}
         <Promesa2 />
         <NuevoFooter />
       </div>
