@@ -1,6 +1,4 @@
-import React from "react";
-
-
+import foto1 from '../fotos productos/id1.jpeg';
 export const categorias = [
 
     {id:1,nombre:"bazar"},
@@ -11,28 +9,9 @@ export const categorias = [
 
 ]
 
-    // funcion para el horaririo y fecha
-// export const getDateTime = function () {
-//         let now = new Date();
-//         let year = now.getFullYear();
-//         let month = now.getMonth() + 1;
-//         let day = now.getDate();
-//         let hour = now.getHours();
-//         let minute = now.getMinutes();
-//         let second = now.getSeconds();
-//         (month.toString().length == 1) ? month = '0' + month : '';
-//         (day.toString().length == 1) ? day = '0' + day : '';
-//         (hour.toString().length == 1) ? hour = '0' + hour : '';
-//         (minute.toString().length == 1) ? minute = '0' + minute : '';
-//         (second.toString().length == 1) ? second = '0' + second : '';
-        
-//         let dateTime = day + '/' + month + '/' + year+ ' ' + hour + ':' + minute + ':' + second;
-//         return dateTime;
-//     }
-
 export const productos = [
 
-    {id:1,nombre:"bandeja rectangular", precio:305, categoria:1, stock:100},
+    {id:1,nombre:"bandeja rectangular", precio:305, categoria:1, stock:100, img : {foto1}},
     {id:2,nombre:"rallador con base plastica", precio:300, categoria:1, stock:10},
     {id:3,nombre:"espatula corta pizza", precio:340, categoria:1, stock:9},
     {id:4,nombre:"botella", precio:212, categoria:1, stock:100},

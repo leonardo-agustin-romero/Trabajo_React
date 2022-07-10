@@ -1,11 +1,26 @@
-import React from 'react'
-import { useState } from 'react'
+import React from 'react';
+import { useEffect } from 'react';
 
-const Item = () => {
-    const array = useState(true);
-    return (
-        <div>{console.log(array)}</div>
-    )
+
+export default function Item() {
+    async function get() {
+        try {
+        const result = await fetch(
+        'https://pokeapi.co/api/v2/pokemon/?offset=20&limit=10'
+    );
+    const data = await result.json();
+    console.log(data.results);
+    } catch {
+    console.log('Error');
+    }
 }
+useEffect(() => {
+    get();
+    }, []);
+    return (
+    <div>
+        <h1>api pokemon</h1>
 
-export default Item
+    </div>
+    );
+}
