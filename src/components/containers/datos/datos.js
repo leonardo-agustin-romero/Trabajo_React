@@ -11,7 +11,7 @@ export const categorias = [
 
 export const productos = [
 
-    {id:1,nombre:"bandeja rectangular", precio:305, categoria:1, stock:100, img : {foto1}},
+    {id:1,nombre:"bandeja rectangular", precio:305, categoria:1, stock:100, img : foto1},
     {id:2,nombre:"rallador con base plastica", precio:300, categoria:1, stock:10},
     {id:3,nombre:"espatula corta pizza", precio:340, categoria:1, stock:9},
     {id:4,nombre:"botella", precio:212, categoria:1, stock:100},

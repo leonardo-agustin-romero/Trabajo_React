@@ -1,0 +1,20 @@
+.card{
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "foto1 foto2 foto3 foto4"
+    "foto5 foto6 foto7 foto8"
+    "foto9 foto10 foto11 foto12"
+    "foto13 foto14 foto15 foto16";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 90px;
+    margin-bottom: 90px; 
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { productos } from './datos';
+import { productos } from './datos/datos';
 import { Cards } from './card';
 
 
