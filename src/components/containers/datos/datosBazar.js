@@ -1,3 +1,4 @@
+import React from 'react';
 import foto1 from '../fotos productos/id1.jpeg';
 import foto2 from '../fotos productos/id2.jpeg';
 import foto3 from '../fotos productos/id3.jpeg';
@@ -15,7 +16,8 @@ import foto12 from '../fotos productos/id12.jpeg';
 
 
 
-export const productosBazar = [
+
+const productosBazar = [
 
     {id:1,nombre:"bandeja rectangular", precio:305, categoria:1, stock:100, img : foto1},
     {id:2,nombre:"rallador con base plastica", precio:300, categoria:1, stock:10, img : foto2},
@@ -30,3 +32,5 @@ export const productosBazar = [
     {id:11,nombre:"seca platos", precio:745, categoria:1, stock:10, img : foto11},
     {id:12,nombre:"juguera manual", precio:230, categoria:1, stock:9, img : foto12}
 ]
+
+export default productosBazar;

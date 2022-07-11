@@ -8,8 +8,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Promesa from './components/containers/promesa';
 import { Cards } from './components/containers/card';
 import { Promesa2 } from './components/containers/promesa2';
-import { categoriaBazar } from './components/containers/categorias';
-import ItemListContainer from './components/containers/ItemListContainer';
+import { CardsBijuteri } from './components/containers/cards/cardBijureri';
+import { CardsBazar } from './components/containers/cards/cardsBazar';
+import { CardsTecnologia } from './components/containers/cards/cardTecnologia';
+import { CardsJuguetes } from './components/containers/cards/cardJuguetes';
+import { CardsBelleza } from './components/containers/cards/cardBelleza';
 
 
 
@@ -21,10 +24,13 @@ function App() {
       <NarBar />
           <Routes>
             <Route index path='/' element={<Saludo />} />
-            <Route path='/bazar.HTML' element={<categoriaBazar /> }/>
-            <Route path='/billuteri.HTML' element={<ItemListContainer prop='PRACTICANDO PROP'/>} />
+            <Route path='/bazar.HTML' element={<CardsBazar/> }/>
+            <Route path='/bijuteri.html' element={<CardsBijuteri/>} />
+            <Route path='/tecnologia.html' element={<CardsTecnologia/>} />
+            <Route path='/juguetes.html' element={<CardsJuguetes/>} />
+            <Route path='/belleza.html' element={<CardsBelleza/>} />
           </Routes>
-        <Cards />
+        {/* <Cards /> */}
         <Promesa2 />
         <NuevoFooter />
       </div>
