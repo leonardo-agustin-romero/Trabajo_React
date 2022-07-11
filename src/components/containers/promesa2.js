@@ -6,7 +6,7 @@ export const Promesa2 = () => {
     fetch(url)
     .then((res)=>res.json())
     .then((data)=>{
-        return console.log(data.results);
+        return console.table(data.results);
     })
 },1000);    
 }

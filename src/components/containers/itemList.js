@@ -7,7 +7,6 @@ export const itemlist = () => {
 
     return
     (<>
-    <div className="container">itemList</div>
-    {item}
+    <div className="container">{item}</div>
     </>)
 }

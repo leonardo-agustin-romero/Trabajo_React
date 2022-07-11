@@ -13,6 +13,8 @@ import { CardsBazar } from './components/containers/cards/cardsBazar';
 import { CardsTecnologia } from './components/containers/cards/cardTecnologia';
 import { CardsJuguetes } from './components/containers/cards/cardJuguetes';
 import { CardsBelleza } from './components/containers/cards/cardBelleza';
+import ItemListContainer from './components/containers/ItemListContainer';
+import Item from './components/containers/item';
 
 
 
@@ -29,8 +31,9 @@ function App() {
             <Route path='/tecnologia.html' element={<CardsTecnologia/>} />
             <Route path='/juguetes.html' element={<CardsJuguetes/>} />
             <Route path='/belleza.html' element={<CardsBelleza/>} />
+            <Route path='/api.html' element={<ItemListContainer/>} />
           </Routes>
-        {/* <Cards /> */}
+          <Item />
         <Promesa2 />
         <NuevoFooter />
       </div>

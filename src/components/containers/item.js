@@ -10,6 +10,7 @@ export default function Item() {
     );
     const data = await result.json();
     console.log(data.results);
+    return (<div>{data.results.name}</div>);
     } catch {
     console.log('Error');
     }
@@ -19,8 +20,7 @@ useEffect(() => {
     }, []);
     return (
     <div>
-        <h1>api pokemon</h1>
-
+        {get}
     </div>
     );
 }

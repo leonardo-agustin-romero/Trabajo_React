@@ -1,12 +1,11 @@
 import React from 'react';
 import { itemlist } from './itemList';
 
-
-const ItemListContainer = ({prop}) =>{
+const ItemListContainer = () =>{
     
     return(
         <>
-            <h2>{prop}</h2>
+            <h2>api pokemon en consola</h2>
             {itemlist}
         </>
     )
