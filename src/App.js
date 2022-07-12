@@ -15,6 +15,7 @@ import { CardsJuguetes } from './components/containers/cards/cardJuguetes';
 import { CardsBelleza } from './components/containers/cards/cardBelleza';
 import ItemListContainer from './components/containers/ItemListContainer';
 import Item from './components/containers/item';
+import {Pago }from './components/containers/itemDetailContainer';
 
 
 
@@ -31,7 +32,7 @@ function App() {
             <Route path='/tecnologia.html' element={<CardsTecnologia/>} />
             <Route path='/juguetes.html' element={<CardsJuguetes/>} />
             <Route path='/belleza.html' element={<CardsBelleza/>} />
-            <Route path='/api.html' element={<ItemListContainer/>} />
+            <Route path='/api.html' element={Pago ()} />
           </Routes>
           <Item />
         <Promesa2 />
