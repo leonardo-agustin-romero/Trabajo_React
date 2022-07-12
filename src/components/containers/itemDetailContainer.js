@@ -2,8 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 
 
-
-export const Pago = () => {
+const Pago = () => {
     async function get() {
         try {
         const result = await fetch(
@@ -11,7 +10,7 @@ export const Pago = () => {
     );
     const data = await result.json();
     console.log(data.results);
-    return (<div>{data.results}</div>);
+    return (data.results);
     } catch {
     console.log('Error');
     }
@@ -25,3 +24,5 @@ useEffect(() => {
     </div>
     );
 }
+
+export default Pago;
