@@ -20,7 +20,6 @@ useEffect(() => {
     }, []);
     return (
     <div>
-        {get}
     </div>
     );
 }
